@@ -16,9 +16,9 @@ void loop () {
 
     if(estadobotao1 == HIGH && estadobotao2 == LOW){
         digitalWrite(led, HIGH);
-    } else if(estadobotao2 == HIGH && estadobotao1 == LOW){
+    } if(estadobotao2 == HIGH && estadobotao1 == LOW){
         digitalWrite(led, HIGH);
-    } else {
+    } else if (estadobotao2 == HIGH && estadobotao1 == HIGH) {
         digitalWrite(led, LOW);
 }
     }
